@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
     })
       .then(dbLogData => {
         if (!dbLogData) {
-          res.status(404).json({ message: 'No post found with this id' });
+          res.status(404).json({ message: 'No log found with this id' });
           return;
         }
         res.json(dbLogData);
@@ -59,5 +59,55 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
       });
   });
+
+  router.put('/:id', (req, res) => {
+    Log.update(
+      {
+        title: req.body.title,
+        body: req.body.body,
+        exercises: req.body.exercises,
+        time: req.body.time,
+        calories_burned: req.body.calories_burned  
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    )
+      .then(dbLogData => {
+        if (!dbLogData) {
+          res.status(404).json({ message: 'No Log found with this id' });
+          return;
+        }
+        res.json(dbLogData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+  router.delete('/:id', (req, res) => {
+    Log.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbLogData => {
+        if (!dbLogData) {
+          res.status(404).json({ message: 'No log found with this id' });
+          return;
+        }
+        res.json(dbLogData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+
+
   
   module.exports = router
