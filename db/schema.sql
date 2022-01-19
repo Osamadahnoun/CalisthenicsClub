@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS placeholder_db;
+DROP DATABASE IF EXISTS calisthenics_db;
 
-CREATE DATABASE placeholder_db;
+CREATE DATABASE calisthenics_db;
