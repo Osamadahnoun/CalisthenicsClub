@@ -1,0 +1,33 @@
+.header-text {
+    color: white;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #D7D7D7;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+  }  
+  
+  .card {
+      border: solid black;
+      border-radius: 10px;
+  } 
+
+  .forum-grey {
+    background-color: #D7D7D7;
+    color: #434343;
+  }
+
+  .forums-color {
+    color: #434343;
+  }

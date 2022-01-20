@@ -1,0 +1,13 @@
+<div class="h1 m-4 forums-color"> Welcome to the CalisthenicsClub Forums!</div>
+
+<ul class="list-group">
+    {{#each posts as |post|}}
+    <li class="list-group-item forum-grey">
+        <div class="d-flex justify-content-between">
+            <div class="title">{{ post.title }}</div>
+            <div>Asked by {{post.user.username}} on {{ post.created_at }}</div>
+        </div>
+        <div>{{ post.vote_count }} Likes | {{post.comments.length}} Comments</div>
+    </li>
+    {{/each}}
+  </ul>
