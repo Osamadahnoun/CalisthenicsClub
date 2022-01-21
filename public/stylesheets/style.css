@@ -15,6 +15,7 @@ html {
   body {
     /* Margin bottom by footer height */
     background-color: #D7D7D7;
+    min-height: 100vh;
   }
 
   .card {
@@ -34,4 +35,14 @@ html {
   ul {
     padding-bottom: 50px;
   }
-    
+
+  .sticky-footer {
+    position: sticky;
+    top: 100%;
+  }
+  
+  
+
+
+
+  
