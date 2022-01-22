@@ -62,3 +62,10 @@ html {
   .signup {
     color: #434343;
   }
+
+  .btn-no-style {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
