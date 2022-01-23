@@ -69,3 +69,8 @@ html {
     cursor: pointer;
     text-decoration: none;
   }
+
+  .post-title {
+    color: #434343;
+    text-decoration: none;
+  }
