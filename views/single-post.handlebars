@@ -10,3 +10,27 @@
         <div class="p-5">{{post.body}}</div>
     </li>
   </ul>
+
+    <form class="container-fluid">
+    <div class="form-group w-25 p-3">
+      <label for="exampleFormControlTextarea1">Use textarea to comment below!</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="p-3">
+        <button type="submit" class="upvote-btn text-white">add comment</button>
+        <button type="button" class="upvote-btn text-white">upvote</button>
+      </div>
+      <div class="comments">
+          {{#each post.comments}}
+        <section class="comment">
+          <div class="meta">
+            {{user.username}} on {{created_at}}
+          </div>
+          <div class="text">
+            {{comment_text}}
+          </div>
+        </section>
+          {{/each}}
+      </div>
+  </form>
+  

@@ -74,3 +74,13 @@ html {
     color: #434343;
     text-decoration: none;
   }
+
+  .upvote-btn {
+    background-color: #434343;
+    border-radius: 12px;
+  }
+
+  .comment:nth-child(odd) {
+    background-color: #a4a4a4;
+    color: #434343; 
+  }
