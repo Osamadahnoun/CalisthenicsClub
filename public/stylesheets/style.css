@@ -80,6 +80,11 @@ html {
     border-radius: 12px;
   }
 
+  .comment-btn {
+    background-color: #434343;
+    border-radius: 12px;
+  }
+
   .comment:nth-child(odd) {
     background-color: #a4a4a4;
     color: #434343; 
