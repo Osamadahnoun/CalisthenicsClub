@@ -4,9 +4,9 @@
     <li class="list-group-item forum-grey">
         <div class="d-flex justify-content-between">
             <div class="title">{{ post.title }}</div>
-            <div>Asked by {{post.user.username}} on {{ post.created_at }}</div>
+            <div>Asked by {{post.user.username}} on {{format_date post.created_at}}</div>
         </div>
-        <div>{{ post.vote_count }} Likes | {{post.comments.length}} Comments</div>
+        <div>{{ post.vote_count }} {{format_plural "Like" post.vote_count}} | {{post.comments.length}} {{format_plural "Comment" post.comments.length}} </div>
         <div class="p-5">{{post.body}}</div>
     </li>
   </ul>
@@ -25,7 +25,7 @@
           {{#each post.comments}}
         <section class="comment">
           <div class="meta">
-            {{user.username}} on {{created_at}}
+            {{user.username}} on {{ format_date created_at }}
           </div>
           <div class="text">
             {{comment_text}}

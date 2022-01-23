@@ -5,9 +5,9 @@
     <li class="list-group-item forum-grey">
         <div class="d-flex justify-content-between">
             <div class="title"><a class="post-title" href="/post/{{post.id}}">{{post.title}}</a></div>
-            <div>Asked by {{post.user.username}} on {{ post.created_at }}</div>
+            <div>Asked by {{post.user.username}} on {{ format_date created_at }}</div>
         </div>
-        <div>{{ post.vote_count }} Likes | {{post.comments.length}} Comments</div>
+        <div>{{ post.vote_count }} {{format_plural "Like" vote_count}} | {{post.comments.length}} {{format_plural "Comment" comments.length}} </div>
     </li>
     {{/each}}
   </ul>
