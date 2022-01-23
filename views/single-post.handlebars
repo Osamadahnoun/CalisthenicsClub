@@ -11,6 +11,7 @@
     </li>
   </ul>
 
+    {{#if loggedIn}}
     <form class="container-fluid comment-form">
     <div class="form-group w-50 p-3">
       <label for="exampleFormControlTextarea1">Use textarea to comment below!</label>
@@ -33,7 +34,10 @@
           {{/each}}
       </div>
   </form>
+  {{/if}}
 
+{{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
 <script src="/javascript/upvote.js"></script>
+{{/if}}
   
