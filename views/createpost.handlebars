@@ -1,0 +1,26 @@
+<form class="m-5 w-50 forum-post-form p-5 new-post-form">
+    <div class="post-title h2">Create New Forum Post</div>
+    <div class="form-group">
+      <label for="post-title">Title</label>
+      <input type="text" name="post-title" class="form-control" id="post-title" placeholder="Enter Post Title">
+    </div>
+    <div class="form-group d-flex flex-column">
+      <label for="post-body">Body</label>
+      <textarea id="post-body" name="post-body"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Create Post</button>
+  </form>
+
+  {{#if posts.length}}
+  <ul class="list-group">
+    <div class="h2 p-5">Your Posts:</div>
+    {{#each posts as |post|}}
+    <li class="list-group-item forum-grey">
+      <div>{{post.title}}</div>
+    <a href="/createpost/edit/{{post.id}}" class="btn-no-style">Edit post</a>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+
+  <script src="/javascript/add-post.js"></script>

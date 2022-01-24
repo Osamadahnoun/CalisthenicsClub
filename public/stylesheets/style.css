@@ -89,3 +89,12 @@ html {
     background-color: #a4a4a4;
     color: #434343; 
   }
+
+  .forum-post-form {
+    border: solid #434343;
+    border-radius: 12px;  
+  }
+
+  #post-body {
+    border-radius: 12px;
+  }
