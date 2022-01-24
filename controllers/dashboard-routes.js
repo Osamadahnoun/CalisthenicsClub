@@ -28,7 +28,10 @@ router.get('/forums', (req, res) => {
     })
       .then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('forums', { posts });
+        res.render('forums', { 
+            posts,
+            loggedIn: req.session.loggedIn
+        });
       })
       .catch(err => {
         console.log(err);
@@ -67,7 +70,7 @@ router.get('/forums', (req, res) => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
         res.render('createpost', { 
             posts, 
-            loggedIn: true
+            loggedIn: req.session.loggedIn
         });
       })
       .catch(err => {
@@ -77,22 +80,30 @@ router.get('/forums', (req, res) => {
   });
   
   router.get('/beginner', (req, res) => {
-    res.render('beginner');
+    res.render('beginner', {
+        loggedIn: req.session.loggedIn
+    });
   });
 
   
   router.get('/intermediate', (req, res) => {
-    res.render('intermediate');
+    res.render('intermediate', {
+        loggedIn: req.session.loggedIn
+    });
   });
 
   
   router.get('/advanced', (req, res) => {
-    res.render('advanced');
+    res.render('advanced', {
+        loggedIn: req.session.loggedIn
+    });
   });
 
   
   router.get('/veryAdvanced', (req, res) => {
-    res.render('veryAdvanced');
+    res.render('veryAdvanced', {
+        loggedIn: req.session.loggedIn
+    });
   });
 
 
