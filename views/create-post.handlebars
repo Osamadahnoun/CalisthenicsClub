@@ -1,4 +1,29 @@
 <form class="m-5 w-50 forum-post-form p-5 new-post-form">
+    <div class="log-title h2">Create New Workout Log</div>
+    <div class="form-group">
+      <label for="log-title">Title</label>
+      <input type="text" name="log-title" class="form-control" id="log-title" placeholder="Enter Log Title">
+    </div>
+    <div class="form-group d-flex flex-column mt-3">
+      <label for="log-body">Body</label>
+      <textarea id="log-body" name="log-body"></textarea>
+    </div>
+    <div class="form-group mt-3">
+        <label for="log-calories">How many calories did you burn?</label>
+        <input type="text" name="log-calories" class="form-control" id="log-calories" placeholder="Enter a whole number!">
+      </div>
+      <div class="form-group mt-3">
+        <label for="log-exercise">How many exercises did you complete?</label>
+        <input type="text" name="log-exercise" class="form-control" id="log-exercise" placeholder="Enter a whole number!">
+      </div>
+      <div class="form-group mt-3">
+        <label for="log-time">How long was your workout?</label>
+        <input type="text" name="log-time" class="form-control" id="log-time" placeholder="Enter using this format: 0h 0m">
+      </div>
+    <button type="submit" class="btn btn-primary mt-3">Create Log</button>
+  </form>
+
+<form class="m-5 w-50 forum-post-form p-5 new-post-form">
     <div class="post-title h2">Create New Forum Post</div>
     <div class="form-group">
       <label for="post-title">Title</label>
@@ -13,7 +38,7 @@
 
   {{#if posts.length}}
   <ul class="list-group">
-    <div class="h2 p-5">Your Posts:</div>
+    <div class="h2 p-5">Your Forum Posts:</div>
     {{#each posts as |post|}}
     <li class="list-group-item forum-grey">
       <div>{{post.title}}</div>
