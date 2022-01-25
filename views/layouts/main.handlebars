@@ -10,20 +10,49 @@
 </head>
 <body>
     
-<nav class="navbar navbar-light bg-primary header p-4 w-100">
-    <a class="navbar-brand p-3 text-white" href="/workoutlog">Workout Log</a>
-    <a class="navbar-brand p-3 text-white" href="/forums">Forums</a>
-    <a class="navbar-brand p-3 text-white" href="/beginner">Beginner Exercises</a>
-    <a class="navbar-brand p-3 text-white" href="/intermediate">Intermediate Exercises</a>
-    <a class="navbar-brand p-3 text-white" href="/advanced">Advanced Exercises</a>
-    <a class="navbar-brand p-3 text-white" href="/veryAdvanced">Very Advanced Exercises</a>
-    {{#if loggedIn}}
-    <a class="navbar-brand p-3 text-white" href="/create-post">Create Post</a>
-    <button class="navbar-brand p-3 text-white bg-primary btn-no-style" id="logout">Logout</button>
-    {{else}}
-    <a class="navbar-brand p-3 text-white" href="/">Login</a>
-    {{/if}}
-</nav>         
+<nav class="d-flex footer bg-primary bg-gradient text-light container-fluid p-3" style="scroll-margin-bottom:1em">
+         <div class="btn-group btn-group-sm me-2 justify-content-center container-fluid d-flex align-content-between flex-wrap align-self-center gy-2 p-3" role="menu bar" aria-label="Second group">
+               {{#if loggedIn}}
+             <button onclick="location.href='/create-post'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <p class="justify-content-center">WorkShop</p>
+            </button>
+             <button id ="logout" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <div class="justify-content-center">
+                    <img src="/images/logout_white_24dp.svg" class="img-fluid" alt="Logout button">
+                    <p class="justify-content-center">Logout</p>
+                </div>
+            </button>
+            {{else}}
+            <button onclick="location.href='/'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <div class="justify-content-center">
+                    <img src="/images/login_white_24dp.svg" class="img-fluid" alt="Login button">
+                    <p class="justify-content-center">Login</p>
+                </div>
+            </button>
+            {{/if}}
+             <button onclick="location.href='/workoutlog'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <div class="justify-content-center">
+                    <img src="/images/home_white_24dp.svg" class="img-fluid" alt="Home button">
+                    <p class="justify-content-center">Home</p>
+                </div>    
+            </button>
+            <button onclick="location.href='/forums'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <p class="justify-content-center">Forums</p>
+            </button>
+            <button onclick="location.href='/beginner'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <p class="justify-content-center">Beginner</p>
+            </button>
+             <button onclick="location.href='/intermediate'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <p class="justify-content-center">Intermediate</p>
+            </button>
+            <button onclick="location.href='/advanced'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <p class="justify-content-center">Advanced</p>
+            </button>
+            <button onclick="location.href='/veryadvanced'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
+                <p class="justify-content-center">Expert</p>
+            </button>
+        </div>
+        </nav>
 
 <div class="bg-primary text-light h1 p-2 border-top">CalisthenicsClub</div>      
        

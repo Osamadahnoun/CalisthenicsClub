@@ -55,8 +55,9 @@ html {
     border-radius: 12px;
   }
 
-  .btn {
-    background-color: #434343
+  .btnFunction {
+    background-color: #434343;
+    color: white;
   }
 
   .signup {
