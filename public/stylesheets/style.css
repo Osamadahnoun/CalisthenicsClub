@@ -99,3 +99,7 @@ html {
   #post-body {
     border-radius: 12px;
   }
+
+  .img-background {
+    background-image: url(/images/pngegg-calback4.png)
+  }

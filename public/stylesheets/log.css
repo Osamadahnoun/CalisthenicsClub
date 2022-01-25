@@ -1,0 +1,44 @@
+header {
+    font-family: 'Arvo', serif;
+    letter-spacing: 5px;
+  
+  }
+  
+  .header-text {
+      color: white;
+  
+  }
+  h2 {
+    color: dark grey;
+    opacity: .4
+  }
+  
+  html {
+      position: relative;
+      min-height: 100%;
+    }
+  
+    body {
+      /* Margin bottom by footer height */
+      background-color: #D7D7D7;
+      min-height: 100vh;
+    }
+  
+    .footer {
+      position:fixed;
+      bottom: 0;
+      /* Set the fixed height of the footer here */
+    }  
+    
+    .card {
+        border: solid black;
+        border-radius: 10px;
+    }
+  
+  body {
+    background-image: url(/images/pngegg-calback4.png);
+  
+  }
+  
+  
+  

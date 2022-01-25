@@ -4,9 +4,9 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/workoutLog', withAuth, (req, res) => {
-  console.log(req.session)
   res.render('homepage', {
-      loggedIn: req.session.loggedIn
+      layout: 'logtemplate',
+      loggedIn: req.session.loggedIn,
   });
 });
 
