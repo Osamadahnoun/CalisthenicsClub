@@ -1,4 +1,4 @@
-<form class="m-5 w-50 forum-post-form p-5 new-post-form">
+<form class="m-5 w-50 forum-post-form p-5 new-log-form">
     <div class="log-title h2">Create New Workout Log</div>
     <div class="form-group">
       <label for="log-title">Title</label>
@@ -20,7 +20,7 @@
         <label for="log-time">How long was your workout?</label>
         <input type="text" name="log-time" class="form-control" id="log-time" placeholder="Enter using this format: 0h 0m">
       </div>
-    <button type="submit" class="btn btn-primary mt-3">Create Log</button>
+    <button type="submit" class="btn btnFunction mt-3">Create Log</button>
   </form>
 
 <form class="m-5 w-50 forum-post-form p-5 new-post-form">
@@ -33,7 +33,7 @@
       <label for="post-body">Body</label>
       <textarea id="post-body" name="post-body"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary mt-3">Create Post</button>
+    <button type="submit" class="btn btnFunction mt-3">Create Post</button>
   </form>
 
   {{#if posts.length}}
