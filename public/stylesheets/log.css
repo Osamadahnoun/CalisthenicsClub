@@ -19,9 +19,7 @@ header {
     }
   
     body {
-      /* Margin bottom by footer height */
-      background-color: #D7D7D7;
-      min-height: 100vh;
+      margin-bottom: 60px;
     }
   
     .footer {
