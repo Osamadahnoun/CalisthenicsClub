@@ -18,16 +18,16 @@
       <textarea class="form-control" name="comment-body" rows="3"></textarea>
     </div>
     <div class="p-3">
-        <button type="submit" class="comment-btn text-white">add comment</button>
-        <button type="button" class="upvote-btn text-white">upvote</button>
+        <button type="submit" class="btn comment-btn text-white">add comment</button>
+        <button type="button" class="btn upvote-btn text-white">upvote</button>
       </div>
       <div class="comments">
           {{#each post.comments}}
         <section class="comment">
-          <div class="meta">
+          <div class="meta comment-text">
             {{user.username}} on {{ format_date created_at }}
           </div>
-          <div class="text">
+          <div class="text comment-text">
             {{comment_text}}
           </div>
         </section>

@@ -14,22 +14,23 @@ html {
 
   body {
     /* Margin bottom by footer height */
-    background-color: #D7D7D7;
+    background-color: #F0F0F0;
     min-height: 100vh;
   }
 
   .card {
-      border: solid black;
+      border: solid #707070;
       border-radius: 10px;
   } 
 
   .forum-grey {
-    background-color: #D7D7D7;
-    color: #434343;
+    background-color: #F0F0F0;
+    color: #707070;
   }
 
   .forums-color {
-    color: #434343;
+    color: #707070;
+    background-color: #F0F0F0;
   }
  
   ul {
@@ -47,21 +48,21 @@ html {
 
   .title {
         border-radius: 12px;
-        color: #434343
+        color: #707070
   }
 
   .entire-form {
-    border: solid #434343;
+    border: solid #707070;
     border-radius: 12px;
   }
 
   .btnFunction {
-    background-color: #434343;
+    background-color: #707070;
     color: white;
   }
 
   .signup {
-    color: #434343;
+    color: #707070;
   }
 
   .btn-no-style {
@@ -72,27 +73,38 @@ html {
   }
 
   .post-title {
-    color: #434343;
+    color: #707070;
     text-decoration: none;
   }
 
+  .post-date {
+    color: #707070;
+  }
+
   .upvote-btn {
-    background-color: #434343;
+    background-color: #707070;
     border-radius: 12px;
   }
 
   .comment-btn {
-    background-color: #434343;
+    background-color: #707070;
     border-radius: 12px;
+  }
+
+  .comment-text {
+    color: #434343;
   }
 
   .comment:nth-child(odd) {
     background-color: #a4a4a4;
+  }
+
+  .comment {
     color: #434343; 
   }
 
   .forum-post-form {
-    border: solid #434343;
+    border: solid #707070;
     border-radius: 12px;  
   }
 
@@ -100,6 +112,6 @@ html {
     border-radius: 12px;
   }
 
-  .img-background {
-    background-image: url(/images/pngegg-calback4.png)
+  .log-color {
+    color: #707070;
   }

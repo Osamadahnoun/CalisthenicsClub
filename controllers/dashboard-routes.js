@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/forums', (req, res) => {
+router.get('/forums', withAuth, (req, res) => {
     Post.findAll({
       attributes: [
         'id',
@@ -127,28 +127,28 @@ router.get('/forums', (req, res) => {
       });
   });
   
-  router.get('/beginner', (req, res) => {
+  router.get('/beginner', withAuth, (req, res) => {
     res.render('beginner', {
         loggedIn: req.session.loggedIn
     });
   });
 
   
-  router.get('/intermediate', (req, res) => {
+  router.get('/intermediate', withAuth, (req, res) => {
     res.render('intermediate', {
         loggedIn: req.session.loggedIn
     });
   });
 
   
-  router.get('/advanced', (req, res) => {
+  router.get('/advanced', withAuth, (req, res) => {
     res.render('advanced', {
         loggedIn: req.session.loggedIn
     });
   });
 
   
-  router.get('/veryAdvanced', (req, res) => {
+  router.get('/veryAdvanced', withAuth, (req, res) => {
     res.render('veryAdvanced', {
         loggedIn: req.session.loggedIn
     });

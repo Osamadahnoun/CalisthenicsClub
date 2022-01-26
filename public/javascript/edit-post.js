@@ -1,6 +1,5 @@
 async function editFormHandler(event) {
     event.preventDefault();
-    console.log('urmum')
     const title = document.querySelector('input[name="post-title"]').value.trim();
     const body = document.querySelector('#post-body').value.trim();
     // const body = document.querySelector('textarea[name="post-body"]').value.trim();

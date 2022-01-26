@@ -32,3 +32,21 @@
         </div>
     </section>
     <!--Exercise Log end-->
+        {{#if logs.length}}
+        {{#each logs as |log|}}
+    <div class="card w-75 m-5" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="card-header">
+            <a class="log-title" href="/editlog/{{log.id}}">
+                {{log.title}} logged on {{format_date log.created_at}}
+            </a>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Workouts Attempted: {{log.exercises}}</h4>
+          <h4 class="card-title">Calories Burned: {{log.calories_burned}}</h4>
+          <h4 class="card-title">Total Workout Time: {{log.time}}</h4>
+          <h3 class="card-title log-border">Log:</h3>
+          <p class="card-text">{{log.body}}</p>
+        </div>
+      </div>
+      {{/each}}
+      {{/if}}

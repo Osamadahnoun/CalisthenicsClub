@@ -29,7 +29,7 @@ header {
     }  
     
     .card {
-        border: solid black;
+        border: solid #707070;
         border-radius: 10px;
     }
   
@@ -37,6 +37,17 @@ header {
     background-image: url(/images/pngegg-calback4.png);
   
   }
+
+  .log-title {
+    color: #707070;
+    text-decoration: none;
+  }
+
+  .btnFunction {
+    background-color: #707070;
+    color: white;
+  }
+
   
   
   

@@ -3,11 +3,12 @@ const { Log, User } = require('../../models');
 
 router.get('/', (req, res) => {
     Log.findAll({
-      attributes: ['id','title', 'body', 'exercises', 'time', 'calories_burned'],
+      attributes: ['id','title', 'body', 'exercises', 'time', 'calories_burned', 'created_at'],
+      order: [['created_at', 'DESC']],
       include: [
         {
           model: User,
-          attributes: ['username', 'id']
+          attributes: ['username']
         }
       ]
     })
@@ -19,15 +20,15 @@ router.get('/', (req, res) => {
   });
 
   router.get('/:id', (req, res) => {
-    Log.findAll({
+    Log.findOne({
       where: {
-        user_id: req.params.id
+        id: req.params.id
       },
       attributes: ['id', 'title', 'body', 'exercises', 'time', 'calories_burned', 'created_at'],
       include: [
         {
           model: User,
-          attributes: ['username', 'id']
+          attributes: ['username']
         }
       ]
     })
@@ -51,7 +52,7 @@ router.get('/', (req, res) => {
       exercises: req.body.exercises,
       time: req.body.time,
       calories_burned: req.body.calories_burned,
-      user_id: req.body.user_id
+      user_id: req.session.user_id
     })
       .then(dbLogData => res.json(dbLogData))
       .catch(err => {

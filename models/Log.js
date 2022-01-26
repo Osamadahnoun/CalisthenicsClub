@@ -13,23 +13,18 @@ Log.init(
       },
       title: {
           type: DataTypes.STRING,
-          allowNull: false
       },
       body: {
         type: DataTypes.STRING,
-        allowNull: false
       },
       exercises: {
         type: DataTypes.INTEGER,
-        allowNull: false
       },
       time: {
         type: DataTypes.STRING,
-        allowNull: false
       },
       calories_burned: {
         type: DataTypes.INTEGER,
-        allowNull: false
       },
       user_id: {
         type: DataTypes.INTEGER,

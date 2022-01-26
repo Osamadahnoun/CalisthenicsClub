@@ -1,0 +1,28 @@
+<form class="m-5 w-50 forum-post-form p-5 new-post-form">
+    <div class="post-title h2">Edit Log</div>
+    <div class="form-group">
+      <label for="post-title">Title</label>
+      <input name="log-title" type="text" class="form-control" id="log-title" value="{{log.title}}">
+    </div>
+    <div class="form-group d-flex flex-column">
+      <label for="post-body">Body</label>
+      <textarea name="log-body" type ="text" id="log-body">{{log.body}}</textarea>
+    </div>
+    <div class="form-group mt-3 log-color">
+        <label for="log-calories log-color">How many calories did you burn?</label>
+        <input type="number" value="{{log.calories_burned}}" name="log-calories" class="form-control" id="log-calories" placeholder="Enter a whole number!">
+      </div>
+      <div class="form-group mt-3 log-color">
+        <label for="log-exercise log-color">How many exercises did you complete?</label>
+        <input type="number" value="{{log.exercises}}" name="log-exercise" class="form-control" id="log-exercise" placeholder="Enter a whole number!">
+      </div>
+      <div class="form-group mt-3 log-color">
+        <label for="log-time log-color">How long was your workout?</label>
+        <input type="text" value="{{log.time}}" name="log-time" class="form-control" id="log-time" placeholder="Enter using this format: 0h 0m">
+      </div>
+    <button type="button" class="btn btnFunction mt-3 save-log-btn">Save Log</button>
+    <button type="button" class="btn btnFunction mt-3 delete-log-btn">Delete Log</button>
+  </form>
+
+  <script src="/javascript/edit-log.js"></script>
+  <script src="/javascript/delete-log.js"></script>
