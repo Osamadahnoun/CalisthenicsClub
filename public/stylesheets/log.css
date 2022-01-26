@@ -1,145 +1,138 @@
-   header {
-    font-family: 'Arvo', serif;
-    letter-spacing: 0.2rem;
-  }
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    .header-text {
+        color: white;
+    }
+    
+    header {
+      font-family: 'Arvo', serif;
+      letter-spacing: 0.2rem;
+    }
 
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .header-text {
-    color: white;
-}
-   h2 {
-    color: dark grey;
-    opacity: .4
-  }
-
-    .card {
+    h2 {
+      color: dark grey;
+      opacity: .4
+    }
+    
+    html {
+        position: relative;
+        min-height: 100%;
+      }
+    
+      body {
+        min-height: 100vh;
+      }
+    
+      .card {
+          border: solid #707070;
+          border-radius: 10px;
+      } 
+    
+      .forum-grey {
+        background-color: #F0F0F0;
+        color: #707070;
+      }
+    
+      .forums-color {
+        color: #707070;
+        background-color: #F0F0F0;
+      }
+     
+      ul {
+        padding-bottom: 50px;
+      }
+    
+      .sticky-footer {
+        position: sticky;
+        top: 100%;
+      }
+    
+      .logo {
+        border-radius: 12px;
+      }
+    
+      .title {
+            border-radius: 12px;
+            color: #707070
+      }
+    
+      .entire-form {
         border: solid #707070;
-        border-radius: 10px;
-    }
-  
-  body {
-    background-image: url(/images/pngegg-calback4.png);
-  
-  }
-
-  .log-title {
-    color: #707070;
-    text-decoration: none;
-  }
-
-  .btnFunction {
-    background-color: #707070;
-    color: white;
-  }
-  
-  .header-text {
-      color: white;
-  }
-  
-  html {
-      position: relative;
-      min-height: 100%;
-    }
-  
-    .card {
+        border-radius: 12px;
+      }
+    
+      .btnFunction {
+        background-color: #707070;
+        color: white;
+      }
+    
+      .signup {
+        color: #707070;
+      }
+    
+      .btn-no-style {
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    
+      .post-title {
+        color: #707070;
+        text-decoration: none;
+      }
+    
+      .post-date {
+        color: #707070;
+      }
+    
+      .upvote-btn {
+        background-color: #707070;
+        border-radius: 12px;
+      }
+    
+      .comment-btn {
+        background-color: #707070;
+        border-radius: 12px;
+      }
+    
+      .comment-text {
+        color: #434343;
+      }
+    
+      .comment:nth-child(odd) {
+        background-color: #a4a4a4;
+      }
+    
+      .comment {
+        color: #434343; 
+      }
+    
+      .forum-post-form {
         border: solid #707070;
-        border-radius: 10px;
-    } 
-  
-    .forum-grey {
-      background-color: #F0F0F0;
-      color: #707070;
-    }
-  
-    .forums-color {
-      color: #707070;
-      background-color: #F0F0F0;
-    }
-   
-    ul {
-      padding-bottom: 50px;
-    }
-  
-    .sticky-footer {
-      position: sticky;
-      top: 100%;
-    }
-  
-    .logo {
-      border-radius: 12px;
-    }
-  
-    .title {
-          border-radius: 12px;
-          color: #707070
-    }
-  
-    .entire-form {
-      border: solid #707070;
-      border-radius: 12px;
-    }
-  
-    .btnFunction {
-      background-color: #707070;
-      color: white;
-    }
-  
-    .signup {
-      color: #707070;
-    }
-  
-    .btn-no-style {
-      background: none;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-    }
-  
-    .post-title {
-      color: #707070;
-      text-decoration: none;
-    }
-  
-    .post-date {
-      color: #707070;
-    }
-  
-    .upvote-btn {
-      background-color: #707070;
-      border-radius: 12px;
-    }
-  
-    .comment-btn {
-      background-color: #707070;
-      border-radius: 12px;
-    }
-  
-    .comment-text {
-      color: #434343;
-    }
-  
-    .comment:nth-child(odd) {
-      background-color: #a4a4a4;
-    }
-  
-    .comment {
-      color: #434343; 
-    }
-  
-    .forum-post-form {
-      border: solid #707070;
-      border-radius: 12px;  
-    }
-  
-    #post-body {
-      border-radius: 12px;
-    }
-  
-    .log-color {
-      color: #707070;
-    }
+        border-radius: 12px;  
+      }
+    
+      #post-body {
+        border-radius: 12px;
+      }
+    
+      .log-color {
+        color: #707070;
+      }
+
+      body {
+        background-image: url(/images/pngegg-calback4.png);
+      
+      }
+    
+      .log-title {
+        color: #707070;
+        text-decoration: none;
+      }
+
+      
   
