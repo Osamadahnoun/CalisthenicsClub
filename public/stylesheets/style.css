@@ -7,13 +7,17 @@
     color: white;
 }
 
+header {
+  font-family: 'Arvo', serif;
+  letter-spacing: 0.2rem;
+}
+
 html {
     position: relative;
     min-height: 100%;
   }
 
   body {
-    /* Margin bottom by footer height */
     background-color: #F0F0F0;
     min-height: 100vh;
   }

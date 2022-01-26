@@ -28,12 +28,7 @@
         </nav>
     </header>
 
-
-    <section class=" d-flex flex-row border rounded justify-content-evenly container-fluid bg-primary bg-gradient bg-opacity-10">
-        {{{ body }}}
-    </section>
-
-    <nav class="d-flex footer bg-primary bg-gradient text-light container-fluid p-3" style="scroll-margin-bottom:1em">
+     <nav class="d-flex bg-primary bg-gradient text-light container-fluid p-3" style="scroll-margin-bottom:1em">
          <div class="btn-group btn-group-sm me-2 justify-content-center container-fluid d-flex align-content-between flex-wrap align-self-center gy-2 p-3" role="menu bar" aria-label="Second group">
                {{#if loggedIn}}
              <button onclick="location.href='/create-post'" type="button" class="btn btn-primary bg-gradient btn-outline-light text-wrap col shadow">
@@ -77,6 +72,13 @@
         </div>
         </nav>
 </div>
+
+    <section class=" d-flex flex-row border rounded justify-content-evenly container-fluid bg-primary bg-gradient bg-opacity-10">
+        {{{ body }}}
+    </section>
+
+
+{{>footer}}
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
