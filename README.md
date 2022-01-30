@@ -1,20 +1,22 @@
 # CalisthenicsClub
 
-## Challenge
-Build an interactive full-stack application.
-
-## Purpose
-This repository is the repository for all code, front-end and back-end. We separated repositories for simplified workflows.
-
-## App
-https://tranquil-bastion-94254.herokuapp.com
+## Description
+Calisthenics Club is a full stack web application that houses a calisthenics community. It provides the user with a workout tracker, a forums page, and an exercise catalog.
 
 ## Built With
 * HTML
 * CSS
 * Javascript
 * Bootstrap
-* Node
-* Handlebars
-* Express
+* Express.js
+* Handlebars.js
 * Sequelize
+* Animate on scroll library
+
+## Link to Deployed Application
+https://tranquil-bastion-94254.herokuapp.com/
+
+## Screenshot of Deployed application
+![Screenshot of Deployed App](./public/images/screenshotdeployed.png)
+
+
