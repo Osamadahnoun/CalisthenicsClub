@@ -19,4 +19,7 @@ https://tranquil-bastion-94254.herokuapp.com/
 ## Screenshot of Deployed application
 ![Screenshot of Deployed App](./public/images/screenshotdeployed.png)
 
+## Note
+* The secondary repo contains a skeleton of the html/css @ https://github.com/Osamadahnoun/CalisthenicsClub-HTML-CSS
+
 
